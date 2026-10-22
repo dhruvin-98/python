@@ -52,4 +52,41 @@
 # print(type(x))
 
 
+#interview 
+
+# x = 100
+# y = x
+
+# x = 200
+
+# print(x)
+# print(y)
+# print(x is y)
+
+
+# data = ([1, 2], 10)
+# alias = data
+
+# data[0].append(3)
+
+# print(data)
+# print(alias)
+
+# data[0] = [7, 8]
+
+
+
+
+
+training_data = [10, 20, 30]
+
+def normalize(data):
+    data[0] = 0
+    return data
+
+normalized_data = normalize(training_data)
+
+print(training_data)
+print(normalized_data)
+print(training_data is normalized_data)
 
