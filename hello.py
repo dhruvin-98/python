@@ -181,46 +181,67 @@
 
 
 
-from numbers import Real
+# from numbers import Real
 
-def preprocess(config, features):
-    if not isinstance(config, dict):
-        raise TypeError("config must be a dictionary")
+# def preprocess(config, features):
+#     if not isinstance(config, dict):
+#         raise TypeError("config must be a dictionary")
 
-    if not isinstance(features, list):
-        raise TypeError("features must be a list")
+#     if not isinstance(features, list):
+#         raise TypeError("features must be a list")
 
-    multiplier = config.get("multiplier", 1)
+#     multiplier = config.get("multiplier", 1)
 
-    if (
-        isinstance(multiplier, bool)
-        or not isinstance(multiplier, Real)
-    ):
-        raise TypeError("multiplier must be a real number")
+#     if (
+#         isinstance(multiplier, bool)
+#         or not isinstance(multiplier, Real)
+#     ):
+#         raise TypeError("multiplier must be a real number")
 
-    if any(
-        isinstance(value, bool) or not isinstance(value, Real)
-        for value in features
-    ):
-        raise TypeError("all features must be real numbers")
+#     if any(
+#         isinstance(value, bool) or not isinstance(value, Real)
+#         for value in features
+#     ):
+#         raise TypeError("all features must be real numbers")
 
-    processed_features = [
-        value * multiplier for value in features
-    ]
+#     processed_features = [
+#         value * multiplier for value in features
+#     ]
 
-    effective_config = config.copy()
+#     effective_config = config.copy()
 
-    return processed_features, effective_config
+#     return processed_features, effective_config
 
 
-config = {"multiplier": 2}
-features = [1, 2, 3]
+# config = {"multiplier": 2}
+# features = [1, 2, 3]
 
-processed, effective_config = preprocess(config, features)
+# processed, effective_config = preprocess(config, features)
 
-print(processed)
-print(effective_config)
-print(features)
-print(config)
+# print(processed)
+# print(effective_config)
+# print(features)
+# print(config)
 
 #sss
+
+
+
+x = 1    # int
+y = 2.8e1  # float
+z = 1j # complex  j is imaginary value
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+a=float(x)
+print(a) # type conversion 
+
+
+import random 
+print(random.randrange(1,10))
+
+# dir(random)
+
+# dir : for getting all the methods of anything
