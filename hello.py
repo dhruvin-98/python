@@ -352,16 +352,24 @@
 # print(x)
 
 
-x = "Hello"
-y = 15
+# x = "Hello"
+# y = 15
 
-print(bool(x))
-print(bool(y))
+# print(bool(x))
+# print(bool(y))
 
-a = 200
-b = 33
+# a = 200
+# b = 33
 
-if b > a:
-  print("b is greater than a")
-else:
-  print("b is not greater than a")
+# if b > a:
+#   print("b is greater than a")
+# else:
+#   print("b is not greater than a")
+
+
+
+x = 10
+y = 25
+
+print(x/y) #returns float
+print(x//y) #returns integer
