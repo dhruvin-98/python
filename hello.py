@@ -227,21 +227,75 @@
 
 
 
-x = 1    # int
-y = 2.8e1  # float
-z = 1j # complex  j is imaginary value
+# x = 1    # int
+# y = 2.8e1  # float
+# z = 1j # complex  j is imaginary value
 
-print(type(x))
-print(type(y))
-print(type(z))
+# print(type(x))
+# print(type(y))
+# print(type(z))
 
-a=float(x)
-print(a) # type conversion 
+# a=float(x)
+# print(a) # type conversion 
 
 
-import random 
-print(random.randrange(1,10))
+# import random 
+# print(random.randrange(1,10))
 
-# dir(random)
+# # dir(random)
 
-# dir : for getting all the methods of anything
+# # dir : for getting all the methods of anything
+
+# # Create an integer
+# x=5
+# # Create a float
+# y=3.14
+# # Create a complex number
+# z=2+3j
+# # Print the types
+# print(type(x))
+# print(type(y))
+# print(type(z))
+
+
+
+# #casting 
+
+# # Create an integer
+# x=1
+# # Convert to float
+# a=float(x)
+# # Convert to string
+# b=str(x)
+# # Print values
+# print(x)
+# print(a)
+# print(b)
+
+
+
+
+a = "Hello, World!"
+print(a[1])
+
+for x in "banana":
+  print(x)
+
+a = "Hello, World!"
+print(len(a))
+
+
+#in
+# To check if a certain phrase or character is present in a string, we can use the keyword in
+
+print("Hello" in a)
+
+#if
+txt = "The best things in life are free!"
+if "free" in txt:
+  print("Yes, 'free' is present.")
+
+  #if NOT
+  txt = "The best things in life are free!"
+print("expensive" not in txt)
+
