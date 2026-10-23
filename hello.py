@@ -335,3 +335,18 @@ print(txt.upper())
 name = "Python"
 # Print using an f-string
 print(f"I love {name}")
+
+
+#string methods
+
+# txt = "hello, and welcome to my world."
+# x = txt.capitalize()
+# print (x)
+
+# txt = "Hello, And Welcome To My World!"
+# x = txt.casefold()
+# print(x)
+
+# txt = "Hello, welcome to my world."
+# x = txt.index("welcome")
+# print(x)
