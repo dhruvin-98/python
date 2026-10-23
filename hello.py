@@ -275,27 +275,63 @@
 
 
 
-a = "Hello, World!"
-print(a[1])
+# a = "Hello, World!"
+# print(a[1])
 
-for x in "banana":
-  print(x)
+# for x in "banana":
+#   print(x)
 
-a = "Hello, World!"
-print(len(a))
+# a = "Hello, World!"
+# print(len(a))
 
 
-#in
-# To check if a certain phrase or character is present in a string, we can use the keyword in
+# #in
+# # To check if a certain phrase or character is present in a string, we can use the keyword in
 
-print("Hello" in a)
+# print("Hello" in a)
 
-#if
-txt = "The best things in life are free!"
-if "free" in txt:
-  print("Yes, 'free' is present.")
+# #if
+# txt = "The best things in life are free!"
+# if "free" in txt:
+#   print("Yes, 'free' is present.")
 
-  #if NOT
-  txt = "The best things in life are free!"
-print("expensive" not in txt)
+#   #if NOT
+#   txt = "The best things in life are free!"
+# print("expensive" not in txt)
 
+
+a = "hello everyone !"
+
+# x=print(a[2:4])
+# y=print(a[-6:-2])
+# z=print(a[:5])
+
+# print(a.upper())
+# print(a.lower())
+
+# print(a.strip()) # removes white space from start or end
+# print(a.replace("H", "J"))
+
+#split
+print(a.split(",")) # returns ['Hello', ' World!']
+
+b = "2"
+print(a+" "+b)
+
+age = 36
+txt = f"My name is John, I am {age}"
+print(txt)
+
+
+#questions
+
+# Create the variable
+txt = "Hello, World!"
+# Print characters from index 2 to 5
+print(txt[2:5])
+# Print in upper case
+print(txt.upper())
+# Create the name variable
+name = "Python"
+# Print using an f-string
+print(f"I love {name}")
