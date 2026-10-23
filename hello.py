@@ -300,41 +300,41 @@
 # print("expensive" not in txt)
 
 
-a = "hello everyone !"
+# a = "hello everyone !"
 
-# x=print(a[2:4])
-# y=print(a[-6:-2])
-# z=print(a[:5])
+# # x=print(a[2:4])
+# # y=print(a[-6:-2])
+# # z=print(a[:5])
 
-# print(a.upper())
-# print(a.lower())
+# # print(a.upper())
+# # print(a.lower())
 
-# print(a.strip()) # removes white space from start or end
-# print(a.replace("H", "J"))
+# # print(a.strip()) # removes white space from start or end
+# # print(a.replace("H", "J"))
 
-#split
-print(a.split(",")) # returns ['Hello', ' World!']
+# #split
+# print(a.split(",")) # returns ['Hello', ' World!']
 
-b = "2"
-print(a+" "+b)
+# b = "2"
+# print(a+" "+b)
 
-age = 36
-txt = f"My name is John, I am {age}"
-print(txt)
+# age = 36
+# txt = f"My name is John, I am {age}"
+# print(txt)
 
 
-#questions
+# #questions
 
-# Create the variable
-txt = "Hello, World!"
-# Print characters from index 2 to 5
-print(txt[2:5])
-# Print in upper case
-print(txt.upper())
-# Create the name variable
-name = "Python"
-# Print using an f-string
-print(f"I love {name}")
+# # Create the variable
+# txt = "Hello, World!"
+# # Print characters from index 2 to 5
+# print(txt[2:5])
+# # Print in upper case
+# print(txt.upper())
+# # Create the name variable
+# name = "Python"
+# # Print using an f-string
+# print(f"I love {name}")
 
 
 #string methods
@@ -350,3 +350,18 @@ print(f"I love {name}")
 # txt = "Hello, welcome to my world."
 # x = txt.index("welcome")
 # print(x)
+
+
+x = "Hello"
+y = 15
+
+print(bool(x))
+print(bool(y))
+
+a = 200
+b = 33
+
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
