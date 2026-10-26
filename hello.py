@@ -368,8 +368,106 @@
 
 
 
-x = 10
-y = 25
+# x = 10
+# y = 25
 
-print(x/y) #returns float
-print(x//y) #returns integer
+# print(x/y) #returns float
+# print(x//y) #returns integer
+
+
+
+
+# # The Walrus operator  :=
+
+# numbers = [1, 2, 3, 4, 5]
+
+# if (count := len(numbers)) > 3:
+#     print(f"List has {count} elements")
+
+num = 6
+
+# x = "Fri" if num == 5 else "Sat" if num == 6 else "Sun" if num == 7 else "weekday"
+
+# print(x)
+
+# x = ["apple", "banana"]
+# y = ["apple", "banana"]
+# z = x
+
+# print(x is z)
+# print(x is y)
+# print(x == y)
+
+# x = [1, 2, 3]
+# y = [1, 2, 3]
+
+# print(x == y)
+# print(x is y)
+
+# fruits = ["apple", "banana", "cherry"]
+
+# print("banana" in fruits)
+
+
+
+
+
+# # Create variables
+# a=15
+# b=4
+# # Print modulus
+# print(a%b)
+# # Print floor division
+# print(a//b)
+# # Print power
+# print(a**b)
+# # Add 10 to a
+# a+=10
+
+
+
+
+
+# thislist = ["apple", "banana", "cherry"]
+# print(len(thislist))
+
+# thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
+# print(thislist)
+
+# thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+# print(thislist[2:5])
+# print(thislist[:4])
+# print(thislist[2:])
+# print(thislist[-4:-1])
+# if "apple" in thislist:
+#   print("Yes, 'apple' is in the fruits list")
+
+
+# #changing value
+# thislist[1] = "blackcurrant"
+# thislist[1:3] = ["blackcurrant", "watermelon"]
+
+
+# #insert method
+# thislist.insert(2, "watermelon")
+# print(thislist)
+
+
+# fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+# # newlist = []
+# # for x in fruits:
+# #     if "a" in x:
+# #         newlist.append(x)
+# # print(newlist)
+
+# #new comprehension method
+# newlist = [x for x in fruits if "a" in x]
+# print(newlist)
+
+
+list1 = [10,44,86,11,1,234]
+list1.sort()
+print(list1)
+
+
