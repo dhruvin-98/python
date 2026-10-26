@@ -466,8 +466,51 @@ num = 6
 # print(newlist)
 
 
-list1 = [10,44,86,11,1,234]
-list1.sort()
-print(list1)
+# list1 = [10,44,86,11,1,234]
+# list1.sort()
+# print(list1)
+# list1.sort(reverse=True)
+# print(list1)
+
+
+#how to change tuple 
+#convert it to list , change in list , convert again into tuple
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+
+print(x)
+
+#can add tuple to tuple
+
+thistuple = ("apple", "banana", "cherry")
+y = ("orange",)
+thistuple += y
+
+print(thistuple)
+
+
+#unpacking tuple (normally vs using Asterisk)
+
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+(green, yellow, *red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+
+# Create the tuple
+fruits=("apple","banana","cherry")
+# Print the second item
+print(fruits[1])
+# Print the number of items
+print(len(fruits))
+# Unpack the tuple
+(a,b,c) = fruits
+# Print b
+print(b)
 
 
