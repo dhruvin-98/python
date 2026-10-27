@@ -577,39 +577,105 @@ num = 6
 
 
 
-child1 = {
-  "name" : "Emil",
-  "year" : 2004
-}
-child2 = {
-  "name" : "Tobias",
-  "year" : 2007
-}
-child3 = {
-  "name" : "Linus",
-  "year" : 2011
-}
+# child1 = {
+#   "name" : "Emil",
+#   "year" : 2004
+# }
+# child2 = {
+#   "name" : "Tobias",
+#   "year" : 2007
+# }
+# child3 = {
+#   "name" : "Linus",
+#   "year" : 2011
+# }
 
-myfamily = {
-  "child1" : child1,
-  "child2" : child2,
-  "child3" : child3
-}
+# myfamily = {
+#   "child1" : child1,
+#   "child2" : child2,
+#   "child3" : child3
+# }
 
 
-print(myfamily["child2"]["name"])
+# print(myfamily["child2"]["name"])
 
-# Create the dictionary
-car= {
-	"brand":"Ford",
-	"model":"Mustang",
-	"year":2024
-}
-# Print the model
-print(car["model"])
-# Add a color key
-car["color"]="red"
-# Remove the brand key
-car.pop("brand")
-# Print the dictionary
-print(car)
+# # Create the dictionary
+# car= {
+# 	"brand":"Ford",
+# 	"model":"Mustang",
+# 	"year":2024
+# }
+# # Print the model
+# print(car["model"])
+# # Add a color key
+# car["color"]="red"
+# # Remove the brand key
+# car.pop("brand")
+# # Print the dictionary
+# print(car)
+
+
+
+# a = 2
+# b = 330
+# print("A") if a > b else print("B")
+
+# a = 330
+# b = 330
+# print("A") if a > b else print("=") if a == b else print("B")
+
+# x = 15
+# y = 20
+# max_value = x if x > y else y
+# print("Maximum value:", max_value)
+
+
+# temperature = 25
+# is_raining = False
+# is_weekend = True
+
+# if (temperature > 20 and not is_raining) or is_weekend:
+#   print("Great day for outdoor activities!")
+
+# #nested 
+
+# username = "Emil"
+# password = "python123"
+# is_active = True
+
+# if username:
+#   if password:
+#     if is_active:
+#       print("Login successful")
+#     else:
+#       print("Account is not active")
+#   else:
+#     print("Password required")
+# else:
+#   print("Username required")
+
+
+# # Create age variable
+# age = 20;
+# # Write if/elif/else
+# if age<13:
+# 	print("Child")
+# elif age<18:
+# 	print("Teenager")
+# else:
+# 	print("Adult")
+
+
+# #match in python
+
+# # Create variable day
+# day=3;
+# # Use match statement
+
+# match day:
+# 	case 3:
+# 		print("Wednesday")
+# 	case _:
+# 		print("Other day")
+
+
