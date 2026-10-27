@@ -475,42 +475,141 @@ num = 6
 
 #how to change tuple 
 #convert it to list , change in list , convert again into tuple
-x = ("apple", "banana", "cherry")
-y = list(x)
-y[1] = "kiwi"
-x = tuple(y)
+# x = ("apple", "banana", "cherry")
+# y = list(x)
+# y[1] = "kiwi"
+# x = tuple(y)
 
-print(x)
+# print(x)
 
-#can add tuple to tuple
+# #can add tuple to tuple
 
-thistuple = ("apple", "banana", "cherry")
-y = ("orange",)
-thistuple += y
+# thistuple = ("apple", "banana", "cherry")
+# y = ("orange",)
+# thistuple += y
 
-print(thistuple)
-
-
-#unpacking tuple (normally vs using Asterisk)
-
-fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
-
-(green, yellow, *red) = fruits
-
-print(green)
-print(yellow)
-print(red)
+# print(thistuple)
 
 
-# Create the tuple
-fruits=("apple","banana","cherry")
-# Print the second item
-print(fruits[1])
-# Print the number of items
-print(len(fruits))
-# Unpack the tuple
-(a,b,c) = fruits
-# Print b
-print(b)
+# #unpacking tuple (normally vs using Asterisk)
+
+# fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+# (green, yellow, *red) = fruits
+
+# print(green)
+# print(yellow)
+# print(red)
 
 
+# # Create the tuple
+# fruits=("apple","banana","cherry")
+# # Print the second item
+# print(fruits[1])
+# # Print the number of items
+# print(len(fruits))
+# # Unpack the tuple
+# (a,b,c) = fruits
+# # Print b
+# print(b)
+
+#frozen set
+
+# x = frozenset({"apple", "banana", "cherry"})
+
+# #display x:
+# print(x)
+
+# #display the data type of x:
+# print(type(x)) 
+
+
+# # Create the set
+# colors = {"red", "green", "blue"}
+
+# # Print the set
+# print(colors)
+
+# # Add "yellow"
+# colors.add("yellow")
+
+# # Remove "green"
+# colors.discard("green")
+
+# # Print the number of items
+# print(len(colors))
+
+#dictionary
+
+# thisdict =	{
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# print(thisdict)
+
+# car = {
+# "brand": "Ford",
+# "model": "Mustang",
+# "year": 1964
+# }
+
+# x = car.keys()
+# y = car.values()
+# z = car.items()
+
+# print(x) #before the change
+# print(y)
+# print(z)
+# car["color"] = "white"
+
+# print(x) #after the change
+# print(y)
+# print(z)
+
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# mydict = thisdict.copy()
+# print(mydict)
+
+
+
+child1 = {
+  "name" : "Emil",
+  "year" : 2004
+}
+child2 = {
+  "name" : "Tobias",
+  "year" : 2007
+}
+child3 = {
+  "name" : "Linus",
+  "year" : 2011
+}
+
+myfamily = {
+  "child1" : child1,
+  "child2" : child2,
+  "child3" : child3
+}
+
+
+print(myfamily["child2"]["name"])
+
+# Create the dictionary
+car= {
+	"brand":"Ford",
+	"model":"Mustang",
+	"year":2024
+}
+# Print the model
+print(car["model"])
+# Add a color key
+car["color"]="red"
+# Remove the brand key
+car.pop("brand")
+# Print the dictionary
+print(car)
