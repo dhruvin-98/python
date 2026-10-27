@@ -787,3 +787,6 @@ def outer():
 
 outer()
 print("Global:", x)
+
+
+#hello
