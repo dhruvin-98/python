@@ -679,3 +679,111 @@ num = 6
 # 		print("Other day")
 
 
+# Create the i variable
+# i=0;
+# # While loop: print 1-5, skip 3 with continue
+# while i<6:
+# 	i+=1;
+# 	if i == 3:
+# 		continue
+# 	print(i)
+
+# # Create the fruits list
+# fruits = ["apple","banana","cheery"]
+# # Loop through fruits, break at "banana"
+# for x in fruits:
+# 	print(x)
+# 	if x=="banana":
+# 		break
+
+
+
+#function
+
+
+
+#keyword argument
+
+# def my_function(animal, name):
+#   print("I have a", animal)
+#   print("My", animal + "'s name is", name)
+
+# my_function(animal = "dog", name = "Buddy")
+
+
+# #positional argument
+
+# def my_function(animal, name):
+#   print("I have a", animal)
+#   print("My", animal + "'s name is", name)
+
+# my_function("Buddy", "dog")
+
+
+# #mixing
+
+# def my_function(animal, name, age):
+#   print("I have a", age, "year old", animal, "named", name)
+
+# my_function("dog", name = "Buddy", age = 5)
+
+
+# #combining
+
+# def my_function(a, b, /, *, c, d):
+#   return a + b + c + d
+
+# result = my_function(5, 10, c = 15, d = 20)
+# print(result)
+
+# *args
+
+def my_function(*numbers):
+  total = 0
+  for num in numbers:
+    total += num
+  return total
+
+print(my_function(1, 2, 3))
+print(my_function(10, 20, 30, 40))
+print(my_function(5))
+
+
+#  **Kwargs
+
+def my_function(**kid):
+  print("His last name is " + kid["lname"])
+
+my_function(fname = "Tobias", lname = "Refsnes")
+
+
+
+#unpacking list 
+
+def my_function(a, b, c):
+  return a + b + c
+
+numbers = [1, 2, 3]
+result = my_function(*numbers) # Same as: my_function(1, 2, 3)
+print(result)
+
+#unpacking Dictionary
+
+def my_function(fname, lname):
+  print("Hello", fname, lname)
+
+person = {"fname": "Emil", "lname": "Refsnes"}
+my_function(**person) # Same as: my_function(fname="Emil", lname="Refsnes")
+
+x = "global"
+
+def outer():
+  x = "enclosing"
+  def inner():
+    x = "local"
+    print("Inner:", x)
+  inner()
+  print("Outer:", x)
+
+outer()
+print("Global:", x)
