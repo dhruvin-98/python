@@ -3,7 +3,7 @@
 def reverse_string(name) :
     return name[::-1]
 
-name = input("ENter your String :")
+name = input("Enter your String: ")
 print(reverse_string(name))   
 
 
