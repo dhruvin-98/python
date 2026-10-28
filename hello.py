@@ -791,19 +791,141 @@ num = 6
 
 #decorator function
 
-def changecase(func):
-  def myinner():
-    return func().upper()
-  return myinner
+# def changecase(func):
+#   def myinner():
+#     return func().upper()
+#   return myinner
 
-@changecase
-def myfunction():
-  return "Hello Sally"
+# @changecase
+# def myfunction():
+#   return "Hello Sally"
 
-@changecase
-def otherfunction():
-  return "I am speed!"
+# @changecase
+# def otherfunction():
+#   return "I am speed!"
 
-print(myfunction())
-print(otherfunction())
+# print(myfunction())
+# print(otherfunction())
 
+ # lambda function 
+
+# x = lambda a : a + 10
+# print(x(1))
+
+# def myfunc(n):
+#   return lambda a : a * n
+
+# mydoubler = myfunc(2)
+# mytripler = myfunc(3)
+
+# print(mydoubler(11))
+# print(mytripler(11))
+
+# #map
+# numbers = [1, 2, 3, 4, 5]
+# doubled = list(map(lambda x:x*2,numbers))
+# print(doubled)
+
+# #filter 
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+# odd_numbers = list(filter(lambda x:x % 2 !=0 , numbers))
+# print(odd_numbers)
+
+#sorted
+# students = [("Emil", 25), ("Tobias", 22), ("Linus", 28)]
+# sorted_student = sorted(students,key= lambda x:x[1])
+# print(sorted_student)
+
+#sort by str length
+# words = ["apple", "pie", "banana", "cherry"]
+# sorted_words = sorted(words, key=lambda x: len(x))
+# print(sorted_words)
+
+
+#recursion
+
+# def countdown(x):
+#     if x<=0:
+#         print("Done")
+#     else:
+#         print(x)
+#         countdown(x-1)
+
+# countdown(4)
+
+# def factorial(n):
+#   # Base case
+#   if n == 0 or n == 1:
+#     return 1
+#   # Recursive case
+#   else:
+#     return n * factorial(n - 1)
+
+# print(factorial(5))
+
+
+#fibonacci 0,1,1,2,3,5,8,13
+
+# def fibonacci11(x):
+#    if x<=1:
+#     return x  
+#    else:
+#       return fibonacci11(x-1)+fibonacci11(x-2)
+
+
+# print(fibonacci11(7))
+
+
+# #recursion with list
+
+# my_list=[1,2,3,4,5]
+
+# def sum_list(n):
+#   if len(n)==0:
+#     return 0
+#   else:
+#     return 
+
+
+#genertor
+
+#fibonacci using generator
+
+# def fibonacci():
+#       a,b = 0,1
+#       while True:
+#             yield a
+#             a,b = b,a+b
+
+# #get first 100 numbers 
+
+# gen = fibonacci()
+
+# for i in range(10):
+#       print(next(gen))
+
+
+
+
+# def echo_generator():
+#   while True:
+#     received = yield
+#     print("Received:", received)
+
+# gen = echo_generator()
+# next(gen) # Prime the generator
+# gen.send("Hello")
+# gen.send("World")
+
+
+def my_gen():
+  try:
+    yield 1
+    yield 2
+    yield 3
+  finally:
+    print("Generator closed")
+
+gen = my_gen()
+print(next(gen))
+gen.close()
