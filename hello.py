@@ -918,14 +918,43 @@ num = 6
 # gen.send("World")
 
 
-def my_gen():
-  try:
-    yield 1
-    yield 2
-    yield 3
-  finally:
-    print("Generator closed")
+# def my_gen():
+#   try:
+#     yield 1
+#     yield 2
+#     yield 3
+#   finally:
+#     print("Generator closed")
 
-gen = my_gen()
-print(next(gen))
-gen.close()
+# gen = my_gen()
+# print(next(gen))
+# gen.close()
+
+
+# for i in range(10):
+#   print(i)
+
+# print(list(range(5)))
+# print(list(range(1, 6)))
+# print(list(range(5, 20, 3)))
+
+# r = range(10)
+# print(r[2])
+# print(r[:3])
+
+# Print 0 through 5
+for i in range(6):
+	print(i)
+
+# Print 2 through 5
+for i in range(2,6):
+	print(i)
+
+# Create a list
+cars=["Ford","Volvo","BMW"]
+# Print the first item
+print(cars[0])
+# Change the second item to "Toyota"
+cars[1] = "Toyota"
+# Print the list
+print(cars)
