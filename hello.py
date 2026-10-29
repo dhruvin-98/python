@@ -1107,18 +1107,87 @@ num = 6
 # print(x)
 
 
-import re
+# import re
 
-txt = "The rain in Spain"
-x = re.sub("\s", "9", txt)
-print(x)
+# txt = "The rain in Spain"
+# x = re.sub("\s", "9", txt)
+# print(x)
 
 
-# Import re
-import re
-# Create a string
-txt = "The rain in Spain"
-# Search for "Spain"
-x = re.search("Spain",txt)
-# Print the span
-print(x.span())
+# # Import re
+# import re
+# # Create a string
+# txt = "The rain in Spain"
+# # Search for "Spain"
+# x = re.search("Spain",txt)
+# # Print the span
+# print(x.span())
+
+
+
+# try:
+#   print(x)
+# except NameError:
+#   print("Variable x is not defined")
+# except:
+#   print("Something else went wrong")
+
+
+# Try to print x
+# try : 
+# 	print(x)
+# except:
+# 	print("An error occurred")
+# finally:
+# 	print("Execution complete")
+	
+
+# def myconverter(x):
+#   return x * 0.3048
+
+# txt = f"The plane is flying at a {myconverter(30000)} meter altitude"
+# print(txt)
+
+
+#old method of formatting
+
+# quantity = 3
+# itemno = 567
+# price = 49
+# myorder = "I want {} pieces of item number {} for {:.2f} dollars."
+# print(myorder.format(quantity, itemno, price))
+
+
+# # Create a variable
+# price = 49
+# # Create an f-string
+# txt = f"The price is {price}"
+# # Print the result
+# print(txt)
+
+
+
+# x = None
+# print(x)
+# print(type(x))
+# print(bool(None))
+
+
+# # Assign None to x
+# x = None
+# # Check if x is None
+# if x is None:
+# 	print("x is None")
+
+
+
+y = True
+while y == True:
+  x = input("Enter a number:")
+  try:
+    x = float(x);
+    y = False
+  except:
+    print("Wrong input, please try again.")
+
+print("Thank you!")
