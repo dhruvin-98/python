@@ -942,19 +942,57 @@ num = 6
 # print(r[2])
 # print(r[:3])
 
-# Print 0 through 5
-for i in range(6):
-	print(i)
+# # Print 0 through 5
+# for i in range(6):
+# 	print(i)
 
-# Print 2 through 5
-for i in range(2,6):
-	print(i)
+# # Print 2 through 5
+# for i in range(2,6):
+# 	print(i)
 
-# Create a list
-cars=["Ford","Volvo","BMW"]
-# Print the first item
-print(cars[0])
-# Change the second item to "Toyota"
-cars[1] = "Toyota"
-# Print the list
-print(cars)
+# # Create a list
+# cars=["Ford","Volvo","BMW"]
+# # Print the first item
+# print(cars[0])
+# # Change the second item to "Toyota"
+# cars[1] = "Toyota"
+# # Print the list
+# print(cars)
+
+
+
+
+#iterator 
+# Create a tuple
+# mytuple = ("apple","banana","cheery")
+# # Create an iterator
+# myit = iter(mytuple)
+# # Print the first item
+# print(next(myit))
+
+# print(next(iter(mytuple)))
+
+
+
+# # Import the platform module
+# import platform
+# # Print the system platform
+# print(platform.system())
+
+# import mymodule as mm
+
+# print(mm.hellofun())
+
+
+# import datetime 
+
+# print(datetime.datetime.now())
+
+
+# Import the datetime module
+import datetime
+# Store the current date and time in x
+x = datetime.datetime.now()
+# Print the year
+print(x.year)
+

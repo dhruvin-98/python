@@ -36,7 +36,7 @@ def analyze(*lists):
                 print(lists[0])
 
         elif len(lists) == 2:
-                print("Largest number is :",max(combined))
+                print("Largest number is :",max(combined))  
                 print("Smallest number is :",min(combined))
 
         elif len(lists) == 3:
