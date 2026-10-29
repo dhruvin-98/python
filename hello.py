@@ -990,9 +990,83 @@ num = 6
 
 
 # Import the datetime module
-import datetime
-# Store the current date and time in x
-x = datetime.datetime.now()
-# Print the year
-print(x.year)
+# import datetime
+# # Store the current date and time in x
+# x = datetime.datetime.now()
+# # Print the year
+# print(x.year)
 
+# import math
+
+# print(dir(math))
+
+# # Print the lowest value
+# print(min(5,10))
+# # Print the highest value
+# print(max(5,10))
+# # Print the absolute value
+# print(abs(-7.25))
+# # Print 4 to the power of 3
+# print(pow(4,3))
+
+
+#json to python dictionary
+
+# import json
+
+# # some JSON:
+# x =  '{ "name":"John", "age":30, "city":"New York"}'
+
+# # parse x:
+# y = json.loads(x)
+
+# # the result is a Python dictionary:
+# print(y["age"])
+
+
+
+# #dic to JSON
+
+# import json
+
+# # a Python object (dict):
+# x = {
+#   "name": "John",
+#   "age": 30,
+#   "city": "New York"
+# }
+
+# # convert into JSON:
+# y = json.dumps(x)
+
+# # the result is a JSON string:
+# print(y)
+
+import json
+
+x = {
+  "name": "John",
+  "age": 30,
+  "married": True,
+  "divorced": False,
+  "children": ("Ann","Billy"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+
+print(json.dumps(x,indent=4,separators=(" ","="),sort_keys=True))
+
+# Import json
+import json
+
+# Create a JSON string
+x = '{"name": "Emil", "age": 30}'
+
+# Parse the JSON string
+y = json.loads(x)
+
+# Print the age
+print(y["age"])
