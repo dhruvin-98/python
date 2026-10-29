@@ -1042,31 +1042,83 @@ num = 6
 # # the result is a JSON string:
 # print(y)
 
-import json
+# import json
 
-x = {
-  "name": "John",
-  "age": 30,
-  "married": True,
-  "divorced": False,
-  "children": ("Ann","Billy"),
-  "pets": None,
-  "cars": [
-    {"model": "BMW 230", "mpg": 27.5},
-    {"model": "Ford Edge", "mpg": 24.1}
-  ]
-}
+# x = {
+#   "name": "John",
+#   "age": 30,
+#   "married": True,
+#   "divorced": False,
+#   "children": ("Ann","Billy"),
+#   "pets": None,
+#   "cars": [
+#     {"model": "BMW 230", "mpg": 27.5},
+#     {"model": "Ford Edge", "mpg": 24.1}
+#   ]
+# }
 
-print(json.dumps(x,indent=4,separators=(" ","="),sort_keys=True))
+# print(json.dumps(x,indent=4,separators=(" ","="),sort_keys=True))
 
-# Import json
-import json
+# # Import json
+# import json
 
-# Create a JSON string
-x = '{"name": "Emil", "age": 30}'
+# # Create a JSON string
+# x = '{"name": "Emil", "age": 30}'
 
-# Parse the JSON string
-y = json.loads(x)
+# # Parse the JSON string
+# y = json.loads(x)
 
-# Print the age
-print(y["age"])
+# # Print the age
+# print(y["age"])
+
+
+
+# import re
+
+# txt = "The rain in Spain"
+# x = re.findall("ai", txt)
+# print(x)
+
+# import re
+
+# txt = "The rain in Spain"
+# x = re.findall("Portugal", txt)
+# print(x)
+
+# import re
+
+# txt = "The rain in Spain"
+# x = re.search("\s", txt)
+
+# print("The first white-space character is located in position:", x.start())
+
+# import re
+
+# txt = "The rain in Spain"
+# x = re.search("Portugal", txt)
+# print(x)
+
+# import re
+
+# #Split the string at every white-space character:
+
+# txt = "The rain in Spain"
+# x = re.split("\s", txt)
+# print(x)
+
+
+import re
+
+txt = "The rain in Spain"
+x = re.sub("\s", "9", txt)
+print(x)
+
+
+# Import re
+import re
+# Create a string
+txt = "The rain in Spain"
+# Search for "Spain"
+x = re.search("Spain",txt)
+# Print the span
+print(x.span())
