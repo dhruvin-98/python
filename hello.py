@@ -1278,37 +1278,56 @@ num = 6
 # my_playlist.show_songs()
 
 
+# Create the Rectangle class
+
+# class Rectangle:
+# 	def __init__(self,width,height):
+# 		self.width = width
+# 		self.height = height
+
+# 	def area(self):
+# 		return self.width*self.height
+
+# # Create an object
+# r1 = Rectangle(5,3)
+# # Print the area
+# print(r1.area())
 
 
-class car:
-    def __init__(self,brand,model):
-        self.__brand = brand
-        self.model = model
 
-    def get_brand(self):
-        return f"Brand is {self.__brand}"
+
+
+
+
+
+# class car:
+#     def __init__(self,brand,model):
+#         self.__brand = brand
+#         self.model = model
+
+#     def get_brand(self):
+#         return f"Brand is {self.__brand}"
         
 
-    def fullname(self):
-        return f" This is {self.model} from {self.brand} "
+#     def fullname(self):
+#         return f" This is {self.model} from {self.brand} "
 
 
-#inheritence  
-class electric(car):
-    def __init__(self, brand, model,battery_size):
-        super().__init__(brand, model)
-        self.battery_size = battery_size
+# #inheritence  
+# class electric(car):
+#     def __init__(self, brand, model,battery_size):
+#         super().__init__(brand, model)
+#         self.battery_size = battery_size
 
-my_tesla = electric("Tesla","Model S","80Kwh")
-print(my_tesla.get_brand())
-print(my_tesla.model)
-print(my_tesla.battery_size)
-
-
+# my_tesla = electric("Tesla","Model S","80Kwh")
+# print(my_tesla.get_brand())
+# print(my_tesla.model)
+# print(my_tesla.battery_size)
 
 
-# my_car = car("Maruti","Alto")
-# print(my_car)
-# print(my_car.brand)
-# print(my_car.model)
-# print(my_car.fullname())
+# # my_car = car("Maruti","Alto")
+# # print(my_car)
+# # print(my_car.brand)
+# # print(my_car.model)
+# # print(my_car.fullname())
+
