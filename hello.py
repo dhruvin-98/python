@@ -1196,18 +1196,119 @@ num = 6
 
 # object oriented Programming
 
+
+
+# Create a class
+# class Person:
+# 	def __init__(self,name,age):
+# 		self.name = name
+# 		self.age = age
+
+# 	def greet(self):
+# 		print("Hello, my name is"+self.name) 
+	
+# # Create an object
+# p1 = Person("John",36)
+# # Call the greet method
+# p1.greet()
+
+# Create the Dog class
+# class Dog:
+# 	def __init__(self,name,age):
+# 		self.name = name
+# 		self.age = age
+
+# 	def bark(self):
+# 		print(self.name+"says Woof!")
+# # Create an object
+# d1 = Dog("Buddy", 3) 
+# # Call the bark method
+# d1.bark()
+
+# Create the Car class
+# class Car:
+# 	def __init__(self,brand):
+# 		self.brand = brand
+	
+# 	def show(self):
+# 		print(self.brand)	
+
+# # Create an object
+# c1 = Car("Ford") 
+# # Call the show method
+# c1.show()
+
+# Create the Student class
+# class Student:
+# 	def __init__(self,name,grade):
+# 		self.name = name
+# 		self.grade = grade
+
+# # Create an object
+# s1 = Student("Anna","A")
+# # Print the grade
+# print(s1.grade)
+# # Change the grade
+# s1.grade = "B"
+# # Print the updated grade
+# print(s1.grade)
+
+# class Playlist:
+#   def __init__(self, name):
+#     self.name = name
+#     self.songs = []
+
+#   def add_song(self, song):
+#     self.songs.append(song)
+#     print(f"Added: {song}")
+
+#   def remove_song(self, song):
+#     if song in self.songs:
+#       self.songs.remove(song)
+#       print(f"Removed: {song}")
+
+#   def show_songs(self):
+#     print(f"Playlist '{self.name}':")
+#     for song in self.songs:
+#       print(f"- {song}")
+
+# my_playlist = Playlist("Favorites")
+# my_playlist.add_song("Bohemian Rhapsody")
+# my_playlist.add_song("Stairway to Heaven")
+# my_playlist.show_songs()
+
+
+
+
 class car:
     def __init__(self,brand,model):
-        self.brand = brand
+        self.__brand = brand
         self.model = model
+
+    def get_brand(self):
+        return f"Brand is {self.__brand}"
+        
 
     def fullname(self):
         return f" This is {self.model} from {self.brand} "
 
 
+#inheritence  
+class electric(car):
+    def __init__(self, brand, model,battery_size):
+        super().__init__(brand, model)
+        self.battery_size = battery_size
 
-my_car = car("Maruti","Alto")
-print(my_car)
-print(my_car.brand)
-print(my_car.model)
-print(my_car.fullname())
+my_tesla = electric("Tesla","Model S","80Kwh")
+print(my_tesla.get_brand())
+print(my_tesla.model)
+print(my_tesla.battery_size)
+
+
+
+
+# my_car = car("Maruti","Alto")
+# print(my_car)
+# print(my_car.brand)
+# print(my_car.model)
+# print(my_car.fullname())
