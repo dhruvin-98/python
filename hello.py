@@ -1181,13 +1181,33 @@ num = 6
 
 
 
-y = True
-while y == True:
-  x = input("Enter a number:")
-  try:
-    x = float(x);
-    y = False
-  except:
-    print("Wrong input, please try again.")
+# y = True
+# while y == True:
+#   x = input("Enter a number:")
+#   try:
+#     x = float(x);
+#     y = False
+#   except:
+#     print("Wrong input, please try again.")
 
-print("Thank you!")
+# print("Thank you!")
+
+
+
+# object oriented Programming
+
+class car:
+    def __init__(self,brand,model):
+        self.brand = brand
+        self.model = model
+
+    def fullname(self):
+        return f" This is {self.model} from {self.brand} "
+
+
+
+my_car = car("Maruti","Alto")
+print(my_car)
+print(my_car.brand)
+print(my_car.model)
+print(my_car.fullname())
