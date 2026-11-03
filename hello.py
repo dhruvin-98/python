@@ -1294,8 +1294,92 @@ num = 6
 # print(r1.area())
 
 
+# class Person:
+#   def __init__(self, name, age):
+#     self.name = name
+#     self.age = age
+
+#   def __str__(self):
+#     return f"{self.name} ({self.age})"
+
+#   def __repr__(self):
+#     return f"Person(name={self.name!r}, age={self.age})"
+
+# p1 = Person("Emil", 36)
+
+# print(p1)
+# print(repr(p1))
 
 
+# Create the Point class
+
+# class Point :
+# 	def __init__(self,x,y):
+# 		self.x = x
+# 		self.y = y
+
+# 	def __repr__(self):
+# 		return f"Point({self.x},{self.y})"
+
+# # Create an object
+# p1 = Point(2,3)
+# # Print it
+# print(p1)
+
+
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+class Student(Person):
+  def __init__(self, fname, lname, year):
+    super().__init__(fname, lname)
+    self.graduationyear = year
+
+x = Student("Mike", "Olsen", 2019)
+print(x.graduationyear)
+
+
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+class Student(Person):
+  def __init__(self, fname, lname, year):
+    super().__init__(fname, lname)
+    self.graduationyear = year
+
+  def welcome(self):
+    print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
+
+x = Student("Mike", "Olsen", 2024)
+x.welcome()
+
+
+# Create the Animal class
+class Animal:
+	def __init__(self,name):
+		self.name = name
+
+	def speak(self):
+		print(self.name)
+
+# Create the Dog class (inherits from Animal)
+class Dog(Animal):
+	pass
+
+# Create an object
+d1 = Dog("Rex")
+# Call the speak method
+d1.speak()
 
 
 
