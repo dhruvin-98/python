@@ -1327,61 +1327,212 @@ num = 6
 # print(p1)
 
 
-class Person:
-  def __init__(self, fname, lname):
-    self.firstname = fname
-    self.lastname = lname
+# class Person:
+#   def __init__(self, fname, lname):
+#     self.firstname = fname
+#     self.lastname = lname
 
-  def printname(self):
-    print(self.firstname, self.lastname)
+#   def printname(self):
+#     print(self.firstname, self.lastname)
 
-class Student(Person):
-  def __init__(self, fname, lname, year):
-    super().__init__(fname, lname)
-    self.graduationyear = year
+# class Student(Person):
+#   def __init__(self, fname, lname, year):
+#     super().__init__(fname, lname)
+#     self.graduationyear = year
 
-x = Student("Mike", "Olsen", 2019)
-print(x.graduationyear)
-
-
-class Person:
-  def __init__(self, fname, lname):
-    self.firstname = fname
-    self.lastname = lname
-
-  def printname(self):
-    print(self.firstname, self.lastname)
-
-class Student(Person):
-  def __init__(self, fname, lname, year):
-    super().__init__(fname, lname)
-    self.graduationyear = year
-
-  def welcome(self):
-    print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
-
-x = Student("Mike", "Olsen", 2024)
-x.welcome()
+# x = Student("Mike", "Olsen", 2019)
+# print(x.graduationyear)
 
 
-# Create the Animal class
-class Animal:
-	def __init__(self,name):
-		self.name = name
+# class Person:
+#   def __init__(self, fname, lname):
+#     self.firstname = fname
+#     self.lastname = lname
 
-	def speak(self):
-		print(self.name)
+#   def printname(self):
+#     print(self.firstname, self.lastname)
 
-# Create the Dog class (inherits from Animal)
-class Dog(Animal):
-	pass
+# class Student(Person):
+#   def __init__(self, fname, lname, year):
+#     super().__init__(fname, lname)
+#     self.graduationyear = year
 
-# Create an object
-d1 = Dog("Rex")
-# Call the speak method
-d1.speak()
+#   def welcome(self):
+#     print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
+
+# x = Student("Mike", "Olsen", 2024)
+# x.welcome()
 
 
+# # Create the Animal class
+# class Animal:
+# 	def __init__(self,name):
+# 		self.name = name
+
+# 	def speak(self):
+# 		print(self.name)
+
+# # Create the Dog class (inherits from Animal)
+# class Dog(Animal):
+# 	pass
+
+# # Create an object
+# d1 = Dog("Rex")
+# # Call the speak method
+# d1.speak()
+
+
+
+# class Car:
+#   def __init__(self, brand, model):
+#     self.brand = brand
+#     self.model = model
+
+#   def move(self):
+#     print("Drive!")
+
+# class Boat:
+#   def __init__(self, brand, model):
+#     self.brand = brand
+#     self.model = model
+
+#   def move(self):
+#     print("Sail!")
+
+# class Plane:
+#   def __init__(self, brand, model):
+#     self.brand = brand
+#     self.model = model
+
+#   def move(self):
+#     print("Fly!")
+
+# car1 = Car("Ford", "Mustang")       #Create a Car object
+# boat1 = Boat("Ibiza", "Touring 20") #Create a Boat object
+# plane1 = Plane("Boeing", "747")     #Create a Plane object
+
+# for x in (car1, boat1, plane1):
+#   x.move()
+
+
+
+# # Create the Cat class
+# class Cat :
+# 	def sound(self):
+# 		print("Meow")
+
+# # Create the Fox class
+# class Fox:
+# 	def sound(self):
+# 		print("Wa-pa-pa-pa-pa-pow!")
+
+# # Create objects and loop
+# c1 = Cat()
+# f1 = Fox()
+# c1.sound()
+# f1.sound()
+
+# class Person:
+#   def __init__(self, name, age):
+#     self.name = name
+#     self.__age = age
+
+#   def get_age(self):
+#     return self.__age
+
+# p1 = Person("Tobias", 25)
+# print(p1.get_age())
+
+
+# class Person:
+#   def __init__(self, name, age):
+#     self.name = name
+#     self.__age = age
+
+#   def get_age(self):
+#     return self.__age
+
+#   def set_age(self, age):
+#     if age > 0:
+#       self.__age = age
+#     else:
+#       print("Age must be positive")
+
+# p1 = Person("Tobias", 25)
+# print(p1.get_age())
+
+# p1.set_age(26)
+# print(p1.get_age())
+
+# class Student:
+#   def __init__(self, name):
+#     self.name = name
+#     self.__grade = 0
+
+#   def set_grade(self, grade):
+#     if 0 <= grade <= 100:
+#       self.__grade = grade
+#     else:
+#       print("Grade must be between 0 and 100")
+
+#   def get_grade(self):
+#     return self.__grade
+
+#   def get_status(self):
+#     if self.__grade >= 60:
+#       return "Passed"
+#     else:
+#       return "Failed"
+
+# student = Student("Emil")
+# student.set_grade(85)
+# print(student.get_grade())
+# print(student.get_status())
+
+
+# class Person:
+#   def __init__(self, name, salary):
+#     self.name = name
+#     self._salary = salary  # Protected property
+
+# p1 = Person("Linus", 50000)
+# print(p1.name)
+# print(p1._salary)  # Can access, but shouldn't
+
+
+
+# Create the ScoreBoard class
+# class ScoreBoard:
+# 	def __init__(self,score):
+# 		self.__score = score
+	
+# 	def get_score(self):
+# 		return self.__score
+
+# # Create an object
+# s1 = ScoreBoard(0)
+# # Print the score
+# print(s1.get_score())
+
+
+# class Outer:
+#   def __init__(self):
+#     self.name = "Outer"
+
+#   class Inner:
+#     def __init__(self):
+#       self.name = "Inner"
+
+#     def display(self):
+#       print("Hello from inner class")
+
+# outer = Outer()
+
+
+# #inner = outer.Inner()
+# #inner.display()
+# 		#OR
+# #outer.Inner().display()
 
 
 # class car:
