@@ -1748,3 +1748,6 @@ num = 6
 # c.set_max_price(1500)
 # c.sell()
 # # 1500
+
+
+
