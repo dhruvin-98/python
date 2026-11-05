@@ -13,12 +13,19 @@ def get_pockmon_info(name):
 
     if response.status_code == 200:
         data = response.json()
-        print(data)
+        return data
     else:
         print(f"Failed to retrive data : {response.status_code}")
 
 
-pockmon_name = "pikachu"
+pockmon_name = input("Enter name of your favourite POKEMON : ")
 
 pockmon_info = get_pockmon_info(pockmon_name)
+
+
+if pockmon_info:
+    print(f"Name : {pockmon_info["name"]}")
+    print(f"Height : {pockmon_info["height"]}")
+    print(f"Weight : {pockmon_info["weight"]}")
+
 
