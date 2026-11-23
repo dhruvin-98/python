@@ -48,16 +48,16 @@ def register():
         cursor.close()
 
         return redirect('/')
-    return render_template('register.html')
+    return render_template('register')
 
 
 #login
 
-@app.route('/login',methods=['POST'])
+@app.route('/login',methods=['GET','POST'])
 def login():
 
     un = request.form.get('un')
-    pwd = request.form.get('pwd')
+    pw = request.form.get('pw')
 
     connection = get_connection()
     cursor = connection.cursor()
@@ -66,9 +66,9 @@ def login():
         """
         SELECT fn,ln,loginpassword
         FROM loginmaster
-        WHERE loginusername = %s
+        WHERE loginUsername = %s AND loginPassword = %s
         """,
-        (un,)
+        (un,pw)
     )
 
     user = cursor.fetchone();
