@@ -8,7 +8,7 @@
 <body>
     <h1>REGISTER</h1>
 
-    <form method="POST">
+    <form method="POST" action="{{ url_for('register') }}"> 
 
         <label>FIRST NAME :</label>
         <input type="text" name="fn" required>
@@ -27,6 +27,10 @@
         <br><br>
 
         <button type="submit">Register</button> 
+
+        {% if error %}
+        <p style="color: red;">{{ error }}</p>
+        {% endif %}
         
 
     </form>

@@ -8,15 +8,9 @@
 <body>
     <h1>LOGIN</h1>
 
-    {% with messages = get_flashed_messages() %}
-        {% if messages %}
-            {% for message in messages %}
-                <p style="color: red;">{{ message }}</p>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
+    
 
-    <form method="POST">
+    <form method="POST" action="{{ url_for('login') }}">
 
         <label>USERNAME :</label>
         <input type="text" name="un" required>
@@ -27,6 +21,14 @@
         <br><br>
 
         <button type="submit">Login</button> 
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p style="color: red;">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
     
     </form>
 
