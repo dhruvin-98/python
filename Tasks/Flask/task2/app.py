@@ -97,7 +97,7 @@ def login():
 
     return redirect(url_for('welcome'))
 
-
+#for welcome
 @app.route('/welcome')
 def welcome():
     if 'username' not in session:
@@ -109,6 +109,7 @@ def welcome():
         ln=session['last_name']
     )
 
+#for logout
 @app.route('/logout')
 def logout():
     session.clear()
